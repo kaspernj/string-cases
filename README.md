@@ -1,6 +1,6 @@
-[![Build Status](https://api.shippable.com/projects/540e7b9e3479c5ea8f9ec25a/badge?branchName=master)](https://app.shippable.com/projects/540e7b9e3479c5ea8f9ec25a/builds/latest)
 [![Code Climate](https://codeclimate.com/github/kaspernj/string-cases/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/string-cases)
 [![Test Coverage](https://codeclimate.com/github/kaspernj/string-cases/badges/coverage.svg)](https://codeclimate.com/github/kaspernj/string-cases)
+[![Build Status](https://img.shields.io/shippable/540e7b9e3479c5ea8f9ec25a.svg)](https://app.shippable.com/projects/540e7b9e3479c5ea8f9ec25a/builds/latest)
 
 # StringCases
 
