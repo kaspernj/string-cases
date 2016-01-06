@@ -1,31 +1,33 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require "spec_helper"
 
 describe "StringCases" do
   it "#camel_to_snake" do
-    StringCases.camel_to_snake("TestSomethingWee").should eq "test_something_wee"
+    expect(StringCases.camel_to_snake("TestSomethingWee")).to eq "test_something_wee"
   end
 
   it "#snake_to_camel" do
-    StringCases.snake_to_camel("test_something_wee").should eq "TestSomethingWee"
+    expect(StringCases.snake_to_camel("test_something_wee")).to eq "TestSomethingWee"
   end
 
   describe "#pluralize" do
     it "pluralizes normal words" do
-      StringCases.pluralize("user").should eq "users"
+      expect(StringCases.pluralize("user")).to eq "users"
+      expect(StringCases.pluralize("key")).to eq "keys"
     end
 
     it "pluralizes words ending with 'y'" do
-      StringCases.pluralize("category").should eq "categories"
+      expect(StringCases.pluralize("category")).to eq "categories"
     end
   end
 
   describe "#singularize" do
     it "singularizes normal words" do
-      StringCases.singularize("users").should eq "user"
+      expect(StringCases.singularize("users")).to eq "user"
+      expect(StringCases.singularize("keys")).to eq "key"
     end
 
     it "singularizes words ending with 'ies'" do
-      StringCases.singularize("categories").should eq "category"
+      expect(StringCases.singularize("categories")).to eq "category"
     end
   end
 end
