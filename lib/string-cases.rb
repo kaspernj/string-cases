@@ -32,7 +32,7 @@ class StringCases
   end
 
   def self.constantize(str)
-    str.split("::").inject(Module) do |mod_path, mod_to_find|
+    str.to_s.split("::").inject(Module) do |mod_path, mod_to_find|
       mod_path.const_get(mod_to_find)
     end
   end
