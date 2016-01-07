@@ -42,6 +42,12 @@ StringCases.singularize("users") #=> "user"
 StringCases.singularize("categories") #=> "category"
 ```
 
+### Constantize
+
+```ruby
+StringCases.constantize("SomeNamespace::SomeClass") => SomeNamespace::SomeClass
+```
+
 ## Contributing to string-cases
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
