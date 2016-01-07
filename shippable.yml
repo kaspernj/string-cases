@@ -5,5 +5,6 @@ rvm:
   - 2.1.2
 script:
   - CODECLIMATE_REPO_TOKEN=870e996ccf152d25b15c37b94b13b36e852af763000d1a4cc396486586c5febc bundle exec rspec
+  - bundle exec rubocop
 notifications:
    email: false

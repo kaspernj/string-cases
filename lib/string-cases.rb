@@ -4,7 +4,7 @@ class StringCases
   end
 
   def self.camel_to_snake(str)
-    str.to_s.gsub(/(.)([A-Z])/,'\1_\2').downcase
+    str.to_s.gsub(/(.)([A-Z])/, '\1_\2').downcase
   end
 
   def self.pluralize(str)
@@ -29,5 +29,11 @@ class StringCases
     end
 
     str
+  end
+
+  def self.constantize(str)
+    str.to_s.split("::").inject(Module) do |mod_path, mod_to_find|
+      mod_path.const_get(mod_to_find)
+    end
   end
 end
