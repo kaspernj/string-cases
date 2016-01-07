@@ -30,4 +30,15 @@ describe "StringCases" do
       expect(StringCases.singularize("categories")).to eq "category"
     end
   end
+
+  describe "#constantize" do
+    it "works with simple classes" do
+      expect(StringCases.constantize("String")).to eq String
+    end
+
+    it "works with namespaces" do
+      require "weakref"
+      expect(StringCases.constantize("WeakRef::RefError")).to eq WeakRef::RefError
+    end
+  end
 end
