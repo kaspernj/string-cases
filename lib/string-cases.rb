@@ -36,4 +36,31 @@ class StringCases
       mod_path.const_get(mod_to_find)
     end
   end
+
+  def self.hash_keys(hash, mode, args = {})
+    new_hash = {}
+    hash.each do |key, value|
+      case mode
+      when :stringify
+        key = key.to_s if key.is_a?(Symbol)
+      when :symbolize
+        key = key.to_sym if key.is_a?(String)
+      else
+        raise "Unknown mode: #{mode}"
+      end
+
+      value = StringCases.hash_keys(value, mode, args) if args[:recursive] && value.is_a?(Hash)
+      new_hash[key] = value
+    end
+
+    new_hash
+  end
+
+  def self.symbolize_keys(hash, args = {})
+    StringCases.hash_keys(hash, :symbolize, args)
+  end
+
+  def self.stringify_keys(hash, args = {})
+    StringCases.hash_keys(hash, :stringify, args)
+  end
 end

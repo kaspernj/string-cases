@@ -20,6 +20,9 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 250
 
+Metrics/CyclomaticComplexity:
+  Max: 25
+
 Style/AccessModifierIndentation:
   EnforcedStyle: outdent
 
