@@ -41,4 +41,26 @@ describe "StringCases" do
       expect(StringCases.constantize("WeakRef::RefError")).to eq WeakRef::RefError
     end
   end
+
+  describe "#hash_keys" do
+    it "symbolizes keys" do
+      result = StringCases.symbolize_keys("test1" => "test1val", "test2" => {"test3" => "test3val"})
+      expect(result).to eq(test1: "test1val", test2: {"test3" => "test3val"})
+    end
+
+    it "stringify keys" do
+      result = StringCases.stringify_keys(test1: "test1val", test2: {test3: "test3val"})
+      expect(result).to eq("test1" => "test1val", "test2" => {test3: "test3val"})
+    end
+
+    it "symbolizes keys recursively" do
+      result = StringCases.symbolize_keys({"test1" => "test1val", "test2" => {"test3" => "test3val"}}, recursive: true)
+      expect(result).to eq(test1: "test1val", test2: {test3: "test3val"})
+    end
+
+    it "stringify keys recursively" do
+      result = StringCases.stringify_keys({test1: "test1val", test2: {test3: "test3val"}}, recursive: true)
+      expect(result).to eq("test1" => "test1val", "test2" => {"test3" => "test3val"})
+    end
+  end
 end

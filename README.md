@@ -48,6 +48,16 @@ StringCases.singularize("categories") #=> "category"
 StringCases.constantize("SomeNamespace::SomeClass") => SomeNamespace::SomeClass
 ```
 
+### Symbolize keys
+
+```ruby
+StringCases.symbolize_keys({"test1" => "test1val", "test2" => {"test2key" => "test2val"}}, recursive: true) #=> {:test1 => "test1val, :test2 => {:test2key => "test2val"}}
+```
+
+```ruby
+StringCases.stringify_keys({test1: "test1val", test2: {test2key: "test2val"}}, recursive: true) #=> {"test1" => "test1val, "test2" => {"test2key" => "test2val"}}
+```
+
 ## Contributing to string-cases
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
