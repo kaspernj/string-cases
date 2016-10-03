@@ -86,9 +86,8 @@ DEPENDENCIES
   bundler (>= 1.0.0)
   codeclimate-test-reporter
   jeweler (~> 1.8.8)
-  rdoc (~> 3.12)
   rspec (~> 3.2.0)
   rubocop
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
