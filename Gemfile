@@ -6,7 +6,7 @@ source "http://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development, :test do
-  gem "rubocop", require: false
+  gem "rubocop", "0.35.1", require: false
 end
 
 group :development do
