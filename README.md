@@ -1,7 +1,3 @@
-[![Code Climate](https://codeclimate.com/github/kaspernj/string-cases/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/string-cases)
-[![Test Coverage](https://codeclimate.com/github/kaspernj/string-cases/badges/coverage.svg)](https://codeclimate.com/github/kaspernj/string-cases)
-[![Build Status](https://img.shields.io/shippable/540e7b9e3479c5ea8f9ec25a.svg)](https://app.shippable.com/projects/540e7b9e3479c5ea8f9ec25a/builds/latest)
-
 # StringCases
 
 Various kind of string-handeling for Ruby.
@@ -72,4 +68,3 @@ StringCases.stringify_keys({test1: "test1val", test2: {test2key: "test2val"}}, r
 
 Copyright (c) 2013 kaspernj. See LICENSE.txt for
 further details.
-
