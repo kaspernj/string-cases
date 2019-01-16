@@ -72,4 +72,3 @@ StringCases.stringify_keys({test1: "test1val", test2: {test2key: "test2val"}}, r
 
 Copyright (c) 2013 kaspernj. See LICENSE.txt for
 further details.
-
