@@ -43,12 +43,15 @@ GEM
     parser (2.5.0.0)
       ast (~> 2.4.0)
     powerpack (0.1.1)
+    psych (4.0.3)
+      stringio
     public_suffix (3.0.2)
     rack (2.0.4)
     rainbow (2.2.2)
       rake
     rake (12.3.0)
-    rdoc (6.0.1)
+    rdoc (6.4.0)
+      psych (>= 4.0.0)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -70,6 +73,7 @@ GEM
       ruby-progressbar (~> 1.7)
       tins (<= 1.6.0)
     ruby-progressbar (1.9.0)
+    stringio (3.0.1)
     tins (1.6.0)
 
 PLATFORMS
