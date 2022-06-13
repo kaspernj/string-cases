@@ -17,8 +17,14 @@ Naming/FileName:
 Metrics/BlockLength:
   Enabled: false
 
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
 # Disabled on purpose: https://github.com/bbatsov/rubocop/issues/1758
 Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
+Layout/EmptyLines:
   Enabled: false
 
 Layout/EndAlignment:
@@ -48,16 +54,10 @@ Metrics/CyclomaticComplexity:
 RSpec/MultipleExpectations:
   Enabled: false
 
-Style/AccessModifierIndentation:
-  EnforcedStyle: outdent
-
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
 
 Style/Documentation:
-  Enabled: false
-
-Style/EmptyLines:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
