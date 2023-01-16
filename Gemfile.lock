@@ -48,7 +48,7 @@ GEM
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
     parallel (1.22.1)
-    parser (3.1.3.0)
+    parser (3.2.0.0)
       ast (~> 2.4.1)
     psych (5.0.1)
       stringio
@@ -89,13 +89,13 @@ GEM
     rubocop-performance (1.15.2)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rspec (2.16.0)
+    rubocop-rspec (2.17.0)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
     semver2 (3.4.2)
     stringio (3.0.4)
     thread_safe (0.3.6)
-    unicode-display_width (2.3.0)
+    unicode-display_width (2.4.2)
 
 PLATFORMS
   ruby
