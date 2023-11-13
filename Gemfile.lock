@@ -52,14 +52,14 @@ GEM
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
-    psych (5.0.1)
+    psych (5.1.1.1)
       stringio
     racc (1.7.1)
     rack (2.2.3)
     rainbow (3.1.1)
     rake (13.0.6)
     rchardet (1.8.0)
-    rdoc (6.5.0)
+    rdoc (6.6.0)
       psych (>= 4.0.0)
     regexp_parser (2.8.2)
     rexml (3.2.6)
@@ -102,7 +102,7 @@ GEM
       rubocop-factory_bot (~> 2.22)
     ruby-progressbar (1.13.0)
     semver2 (3.4.2)
-    stringio (3.0.4)
+    stringio (3.0.9)
     thread_safe (0.3.6)
     unicode-display_width (2.5.0)
 
