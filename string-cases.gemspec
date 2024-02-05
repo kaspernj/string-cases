@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
 
   s.specification_version = 4
 
-  s.add_development_dependency "rspec", "~> 3.12.0"
+  s.add_development_dependency "rspec", "~> 3.13.0"
   s.add_development_dependency "rdoc", "~> 6.5"
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "jeweler", "~> 2.3.9"
