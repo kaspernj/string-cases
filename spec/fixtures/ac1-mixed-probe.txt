@@ -1,0 +1,1 @@
+This non-Ruby fixture exercises the RSpec-only path filter.
