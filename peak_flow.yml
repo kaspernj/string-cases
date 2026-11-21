@@ -5,10 +5,7 @@ builds:
       RUBY_VERSION: 2.7.6
     name: Ruby 2.7.6
     paths:
-      - "**"
-      - "!**/*.md"
-      - "!**/*.rdoc"
-      - "!LICENSE.txt"
+      - 42
     script:
       - bundle exec rspec
   build_2:
